@@ -47,6 +47,8 @@ def random_number(min: int, max: int) -> int:
     """Generate random number"""
     return random.randint(min, max)
 
+def get_mcp():
+    return mcp
 
 if __name__ == "__main__":
     mcp.run(transport='streamable-http',host="0.0.0.0",port=8000)
